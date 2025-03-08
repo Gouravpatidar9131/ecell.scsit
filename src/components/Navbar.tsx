@@ -29,17 +29,24 @@ const Navbar: React.FC = () => {
   return (
     <>
       <header 
-        className={`fixed top-0 left-0 right-0 z-50 px-5 md:px-10 py-4 transition-all duration-300 ease-in-out ${
-          isScrolled ? 'bg-white/80 dark:bg-black/80 backdrop-blur-lg shadow-sm' : 'bg-transparent'
+        className={`fixed top-0 left-0 right-0 z-50 px-5 pt-5 mb-5 md:px-10 py-4 transition-all duration-300 ease-in-out ${
+          isScrolled ? 'bg-white/5 dark:bg-black/80 backdrop-blur-lg shadow-sm' : 'bg-transparent'
         }`}
       >
         <div className="max-w-7xl mx-auto flex justify-between items-center">
-          <div className="flex items-center">
+          <div className="flex items-center space-x-9 ">
             <a 
               href="#" 
               className="text-2xl font-bold tracking-tighter"
             >
-              E-Cell
+              <img src="/images/Ecell_transparent_svg.png" className="max-w-[70px] h-auto" alt="E-Cell Logo" />
+            </a>
+            <a 
+              href="https://scs.dauniv.ac.in/" 
+              className="text-2xl font-bold tracking-tighter"
+              target="_blank"
+            >
+              <img src="/images/SCSIT logo.png" className="max-w-[80px] h-auto" alt="SCSIT Logo" />
             </a>
           </div>
 
